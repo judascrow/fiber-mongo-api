@@ -5,13 +5,13 @@
 - Full CRUD REST API
 - MongoDB native driver; no use of orm/odm
 - How to structure a production ready API (Model/Controller/Routes)
-- How to implement custom JSON schema validation (database/database.go)
-- How to implement custom collection indexes (database/database.go)
+- How to implement custom JSON schema validation (database/db.go)
+- How to implement custom collection indexes (database/db.go)
 
 ### Start:
 
 - Make sure to setup environmental variables before running
-- Copy .env.eample and change to .env
+- Copy .env.example and change to .env
 
 ### Run server:
 

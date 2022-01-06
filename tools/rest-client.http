@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:8000/api/v1
+
+###
+# @name healthcheck
+GET {{baseUrl}}
+
+################### Users ###################
+###
+# @name users
+GET {{baseUrl}}/users
+
+###
+# @name users
+GET {{baseUrl}}/users/61d69ff250bdc1224dcb751c
+
+###
+# @name users
+POST {{baseUrl}}/users  HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test4",
+    "email": "test4@email.com"
+}
+
+###
+# @name users
+PUT {{baseUrl}}/users/61d69ff250bdc1224dcb751c  HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "email": "test@email.com"
+}
+
+###
+# @name users
+DELETE  {{baseUrl}}/users/61d69ff250bdc1224dcb751c  HTTP/1.1
